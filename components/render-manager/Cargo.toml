@@ -1,0 +1,38 @@
+[package]
+name        = "render-manager"
+version     = "0.1.0"
+authors     = ["Tobias Pfeiffer <tobias.pfeiffer@3d7eed74.net>"]
+edition     = "2021"
+repository  = ""
+license     = "MIT"
+description = "Abstraction over the Vulkan API"
+
+[dependencies]
+wayland     = { path = "../../apis/wayland" }
+atomic-sync = { path = "../atomic-sync" }
+vec-map     = { path = "../vec-map" }
+log         = "*"
+
+[dependencies.vk]
+path = "../../apis/vk"
+features = [
+    "VK_VERSION_1_0",
+    "VK_VERSION_1_1",
+    "VK_KHR_swapchain",
+    "VK_KHR_wayland_surface",
+    "VK_KHR_device_group",
+    "VK_KHR_bind_memory2",
+    "VK_KHR_create_renderpass2",
+    "VK_KHR_get_surface_capabilities2",
+    "VK_KHR_get_memory_requirements2",
+    "VK_KHR_draw_indirect_count",
+    "VK_EXT_descriptor_indexing",
+    "VK_EXT_memory_budget",
+    "VK_EXT_memory_priority",
+    "VK_EXT_debug_utils"
+]
+
+[features]
+default          = ["validation_layer"]
+renderdoc        = []
+validation_layer = ["vk/VK_EXT_debug_utils"]

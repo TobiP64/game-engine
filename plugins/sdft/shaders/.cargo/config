@@ -1,0 +1,10 @@
+[build]
+target = "spirv-unknown-vulkan1.2"
+rustflags = [
+   "-Zcodegen-backend=/home/tobias/Projects/game-engine/shaders/librustc_codegen_spirv.so",
+   "-Zsymbol-mangling-version=v0"
+]
+
+[unstable]
+build-std = ["core"]
+build-std-features = ["compiler-builtins-mem"]

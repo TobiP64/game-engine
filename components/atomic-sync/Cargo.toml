@@ -1,0 +1,12 @@
+[package]
+name        = "atomic-sync"
+version     = "0.1.0"
+authors     = ["Tobias Pfeiffer <tobias@tobiaspfeiffer.net>"]
+edition     = "2021"
+publish     = false
+repository  = "https://gitlab.com/TobiP64/game-engine"
+license     = "MIT"
+description = "Atomics-based synchronization primitives and collections"
+
+[dependencies]
+concurrent-queue = "^1.2"

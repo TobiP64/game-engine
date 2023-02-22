@@ -1,0 +1,19 @@
+[package]
+name        = "app"
+version     = "0.1.0"
+authors     = ["Tobias Pfeiffer <tobias.pfeiffer@3d7eed74.net>"]
+edition     = "2021"
+repository  = ""
+license     = "MIT"
+description = "Core of the game engine"
+
+[dependencies]
+atomic-sync = { path = "../atomic-sync" }
+ecs         = { path = "../ecs" }
+log         = "^0.4"
+libloading  = "^0.6"
+
+[features]
+trace-performace = []
+trace-memory     = []
+trace-unsafe     = []

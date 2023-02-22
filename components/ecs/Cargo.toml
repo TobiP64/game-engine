@@ -1,0 +1,22 @@
+[package]
+name        = "ecs"
+version     = "0.1.0"
+authors     = ["Tobias Pfeiffer <tobias@tobiaspfeiffer.net>"]
+edition     = "2021"
+publish     = false
+repository  = "https://gitlab.com/TobiP64/game-engine"
+license     = "MIT"
+description = "The engine's entity component system (ECS)"
+
+[features]
+default    = ["std", "parallel"]
+std        = []
+entity-uid = []
+parallel   = []
+
+[dependencies]
+vec-map     = { path = "../vec-map" }
+atomic-sync = { path = "../atomic-sync" }
+log         = "^0.4"
+xxhash-rust = { version = "^0.8", features = ["xxh3"] }
+spin        = "^0.9"

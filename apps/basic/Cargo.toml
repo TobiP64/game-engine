@@ -1,0 +1,23 @@
+[package]
+name        = "basic"
+version     = "0.1.0"
+authors     = ["Tobias Pfeiffer <tobias.pfeiffer@3d7eed74.net>"]
+edition     = "2021"
+repository  = ""
+license     = "MIT"
+description = "Demo Application"
+publish     = false
+
+[dependencies]
+wayland     = { path = "../../apis/wayland" }
+pipewire    = { path = "../../apis/pipewire" }
+vk          = { path = "../../apis/vk" }
+xr          = { path = "../../apis/xr" }
+app         = { path = "../../components/app" }
+math        = { path = "../../components/math" }
+ecs         = { path = "../../components/ecs" }
+scene       = { path = "../../components/scene" }
+render-manager = { path = "../../components/render-manager" }
+ui          = { path = "../../plugins/ui" }
+sdft        = { path = "../../plugins/sdft" }
+log         = "^0.4"

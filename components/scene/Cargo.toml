@@ -1,0 +1,15 @@
+[package]
+name        = "scene"
+version     = "0.1.0"
+authors     = ["Tobias Pfeiffer <tobias.pfeiffer@3d7eed74.net>"]
+edition     = "2021"
+repository  = ""
+license     = "MIT"
+description = "Scene primitives and event handling"
+
+[dependencies]
+app          = { path = "../app" }
+ecs          = { path = "../ecs" }
+file-formats = { path = "../file-formats", features = ["ttf"] }
+math         = { path = "../math" }
+vk           = { path = "../../apis/vk", features = ["VK_VERSION_1_0"] }

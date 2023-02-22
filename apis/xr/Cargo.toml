@@ -1,0 +1,66 @@
+[package]
+name        = "xr"
+version     = "0.1.0"
+authors     = ["Tobias Pfeiffer <tobias.pfeiffer@3d7eed74.net>"]
+edition     = "2021"
+repository  = ""
+license     = "MIT"
+description = "Bindings for the OpenXR library"
+
+[dependencies]
+log        = "0.*"
+libloading = "0.*"
+vk         = { path = "../vk" }
+
+[features]
+default = ["XR_VERSION_1_0"]
+XR_EXT_conformance_automation                     = []
+XR_EXT_debug_utils                                = []
+XR_EXT_eye_tracking                               = []
+XR_EXT_overlay                                    = []
+XR_EXT_performance_settings                       = []
+XR_EXT_permissions_support                        = []
+XR_EXT_thermal_query                              = []
+XR_EXT_view_configuration_depth_range             = []
+XR_KHR_D3D10_enable_obsolete                      = []
+XR_KHR_D3D11_enable                               = []
+XR_KHR_D3D12_enable                               = []
+XR_KHR_android_create_instance                    = []
+XR_KHR_android_surface_swapchain                  = []
+XR_KHR_android_thread_settings                    = []
+XR_KHR_composition_layer_color_modulation         = []
+XR_KHR_composition_layer_cube                     = []
+XR_KHR_composition_layer_cylinder                 = []
+XR_KHR_composition_layer_depth                    = []
+XR_KHR_composition_layer_equirect                 = []
+XR_KHR_convert_timespec_time                      = []
+XR_KHR_headless                                   = []
+XR_KHR_metal_enable                               = []
+XR_KHR_opengl_enable                              = []
+XR_KHR_opengl_es_enable                           = []
+XR_KHR_overlays                                   = []
+XR_KHR_variable_rate_rendering                    = []
+XR_KHR_visibility_mask                            = []
+XR_KHR_vulkan_enable                              = []
+XR_KHR_vulkan_swapchain_format_list               = ["XR_KHR_vulkan_enable"]
+XR_KHR_win32_convert_performance_counter_time     = []
+XR_MND_egl_enable                                 = []
+XR_MND_extension_46                               = []
+XR_MND_headless                                   = []
+XR_MSFT_extension_50                              = []
+XR_MSFT_extension_51                              = []
+XR_MSFT_extension_52                              = []
+XR_MSFT_extension_53                              = []
+XR_MSFT_extension_54                              = []
+XR_MSFT_extension_55                              = []
+XR_MSFT_extension_56                              = []
+XR_MSFT_extension_57                              = []
+XR_MSFT_spatial_anchor                            = []
+XR_MSFT_unbounded_reference_space                 = []
+XR_OCULUS_android_session_state_enable            = []
+XR_OCULUS_extension_41                            = []
+XR_OCULUS_extension_42                            = []
+XR_OCULUS_extension_44                            = []
+XR_VARJO_quad_views                               = []
+XR_VERSION_1_0                                    = []
+

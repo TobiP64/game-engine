@@ -1,0 +1,11 @@
+[package]
+name        = "sdtf-host"
+version     = "0.1.0"
+authors     = ["Tobias Pfeiffer <tobias.pfeiffer@3d7eed74.net>"]
+edition     = "2021"
+repository  = ""
+license     = "MIT"
+description = "Plugin for rendering with SDF tracing"
+
+[dependencies]
+math = { path = "../../../components/math" }

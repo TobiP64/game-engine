@@ -1,0 +1,11 @@
+[package]
+name        = "wlgen"
+version     = "0.1.0"
+authors     = ["Tobias Pfeiffer <tobias.pfeiffer@3d7eed74.net>"]
+edition     = "2021"
+repository  = ""
+license     = "MIT"
+description = "Generates the bindings for wayland-client"
+
+[dependencies]
+serde = { version = "^1.0", features = ["serde_derive"] }

@@ -1,0 +1,18 @@
+[package]
+name        = "khrgen"
+version     = "0.1.0"
+authors     = ["Tobias Pfeiffer <tobias.pfeiffer@3d7eed74.net>"]
+edition     = "2021"
+repository  = ""
+license     = "MIT"
+description = "Generates Rust source code from the Vulkan/OpenXR registry"
+readme      = "README.md"
+keywords    = ["vulkan", "vk", "generator", "openxr", "xr"]
+categories  = ["command-line-utilities", "game-development"]
+exclude     = ["tests/*", "res/*"]
+
+[features]
+xml_dbg = []
+
+[dependencies]
+serde = { version = "^1.0", features = ["serde_derive"] }

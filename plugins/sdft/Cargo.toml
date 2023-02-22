@@ -1,0 +1,18 @@
+[package]
+name        = "sdft"
+version     = "0.1.0"
+authors     = ["Tobias Pfeiffer <tobias.pfeiffer@3d7eed74.net>"]
+edition     = "2021"
+repository  = ""
+license     = "MIT"
+description = "Plugin for rendering with SDF tracing"
+
+[dependencies]
+app         = { path = "../../components/app" }
+math        = { path = "../../components/math" }
+ecs         = { path = "../../components/ecs" }
+scene       = { path = "../../components/scene" }
+vk          = { path = "../../apis/vk" }
+render-manager = { path = "../../components/render-manager" }
+atomic-sync = { path = "../../components/atomic-sync" }
+log         = "^0.4"

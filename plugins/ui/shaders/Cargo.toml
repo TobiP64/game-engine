@@ -1,0 +1,16 @@
+[package]
+name        = "ui-shadders"
+version     = "0.1.0"
+authors     = ["Tobias Pfeiffer <tobias.pfeiffer@3d7eed74.net>"]
+edition     = "2021"
+repository  = ""
+license     = "MIT"
+description = "Plugin to render a UI"
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+spirv-std-macros = { git = "https://github.com/EmbarkStudios/rust-gpu.git" }
+spirv-std        = { git = "https://github.com/EmbarkStudios/rust-gpu.git", features = ["glam"] }
+glam             = { git = "https://github.com/EmbarkStudios/glam-rs.git", default-features = false, features = ["libm", "scalar-math"] }

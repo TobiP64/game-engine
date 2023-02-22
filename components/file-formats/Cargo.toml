@@ -1,0 +1,33 @@
+[package]
+name        = "file-formats"
+version     = "0.1.0"
+authors     = ["Tobias Pfeiffer <tobias.pfeiffer@3d7eed74.net>"]
+edition     = "2021"
+repository  = ""
+license     = "MIT"
+description = "Library for reading and writing various file formats"
+
+[dependencies]
+serde        = { version = "^1.0", features = ["serde_derive"], optional = true }
+ttf-parser   = { version = "^0.3", optional = true }
+chrono       = { version = "^0.4", optional = true }
+vk           = { path = "../../apis/vk",   optional = true }
+futures-lite = "^1.12"
+
+[features]
+ber      = []
+ebml     = ["serde"]
+elf      = []
+flac     = []
+gltf     = ["json"]
+json     = ["serde"]
+ktx2     = []
+mkv      = ["ebml"]
+opus     = []
+protobuf = ["serde"]
+ttf      = ["ttf-parser"]
+svg      = ["xml"]
+toml     = ["serde"]
+xml      = ["serde"]
+yaml     = ["serde"]
+dyn_repr = ["serde"]

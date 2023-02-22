@@ -1,0 +1,30 @@
+[workspace]
+members = [
+	"apps/basic",
+	"apis/wayland",
+	"apis/pipewire",
+	"apis/xkbcommon",
+	"apis/soundio",
+	"apis/vk",
+	"apis/xr",
+	"codegen/khrgen",
+	"codegen/wlgen",
+	"components/app",
+	"components/ecs",
+	"components/ecs/ecs_bench_suite",
+	"components/render-manager",
+	"components/scene",
+	"components/math",
+	"components/file-formats",
+    "components/vec-map",
+	"components/atomic-sync",
+	"plugins/sdft",
+	"plugins/sdft/shaders",
+	"plugins/sdft/host",
+	"plugins/ui",
+	"plugins/ui/shaders",
+]
+
+[profile.release]
+lto = "fat"
+codegen-units = 1

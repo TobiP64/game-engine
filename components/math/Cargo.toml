@@ -1,0 +1,11 @@
+[package]
+name        = "math"
+version     = "0.1.0"
+authors     = ["Tobias Pfeiffer <tobias.pfeiffer@3d7eed74.net>"]
+edition     = "2021"
+repository  = ""
+license     = "MIT"
+description = "Vector math library"
+
+[dependencies]
+rand = "^0.8"

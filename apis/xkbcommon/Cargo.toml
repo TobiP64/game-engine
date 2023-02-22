@@ -1,0 +1,13 @@
+[package]
+name        = "xkbcommon"
+version     = "0.1.0"
+authors     = ["Tobias Pfeiffer <tobias.pfeiffer@3d7eed74.net>"]
+edition     = "2021"
+repository  = ""
+license     = "MIT"
+description = "Bindings for the xkbcommon library"
+
+[dependencies]
+log        = "^0.4"
+libloading = "^0.6"
+memmap     = "^0.7"

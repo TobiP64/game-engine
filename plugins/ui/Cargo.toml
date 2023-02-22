@@ -1,0 +1,20 @@
+[package]
+name        = "ui"
+version     = "0.1.0"
+authors     = ["Tobias Pfeiffer <tobias.pfeiffer@3d7eed74.net>"]
+edition     = "2021"
+repository  = ""
+license     = "MIT"
+description = "Plugin to render a UI"
+
+[dependencies]
+app         = { path = "../../components/app" }
+math        = { path = "../../components/math" }
+ecs         = { path = "../../components/ecs" }
+scene       = { path = "../../components/scene" }
+vk          = { path = "../../apis/vk" }
+render-manager = { path = "../../components/render-manager" }
+atomic-sync = { path = "../../components/atomic-sync" }
+vec-map     = { path = "../../components/vec-map" }
+log         = "^0.4"
+async-trait = "^0.1"
